@@ -9,7 +9,7 @@ require 'bundler'
 Bundler.require
 
 class Example
-  def greet(name)
+  def result(name)
     "hello, #{name}"
   end
 end
@@ -17,11 +17,11 @@ end
 describe Example do
   let(:example) { Example.new }
 
-  describe '#greet' do
+  describe '#result' do
     let(:input)  { 'world' }
     let(:output) { 'hello, world' }
 
-    subject { example.greet(input) }
+    subject { example.result(input) }
 
     it { is_expected.to eq output }
   end
