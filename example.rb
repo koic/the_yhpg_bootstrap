@@ -2,6 +2,8 @@
 #
 # http://nabetani.sakura.ne.jp/hena/#{question}
 #
+# Usage: bundle exec rspec example.rb
+#
 require 'bundler'
 
 Bundler.require
